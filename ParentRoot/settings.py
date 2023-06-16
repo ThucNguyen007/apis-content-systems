@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'ParentRoot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv("DATABASE_NAME", "schemadb"),
-        'USER': os.getenv("DATABASE_USER", "core"),
-        'PASSWORD': os.getenv("DATABASE_PASSWORD", "password"),
+        'NAME': os.getenv("DATABASE_NAME", "..."),
+        'USER': os.getenv("DATABASE_USER", "..."),
+        'PASSWORD': os.getenv("DATABASE_PASSWORD", "..."),
         'HOST': os.environ.get("DATABASE_HOST", "localhost"),
         'PORT': os.getenv("DATABASE_PORT", "5432"),
     }
